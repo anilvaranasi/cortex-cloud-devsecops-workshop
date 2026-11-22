@@ -14,7 +14,6 @@ resource "google_storage_bucket" "example" {
 resource "random_id" "rand_suffix" {
   byte_length = 4
 }
-
 output "bucket_name" {
   value = google_storage_bucket.example.name
 }
